@@ -1,0 +1,27 @@
+$base_color: #253858;
+$gray: #cccccc;
+$bg_color: #ffffff;
+
+.navbar {
+  .account-dropdown {
+    background: transparent !important;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    padding: 0;
+    border: none;
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .disabled {
+    user-select: none;
+  }
+}

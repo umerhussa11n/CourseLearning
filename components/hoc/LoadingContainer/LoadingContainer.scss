@@ -1,0 +1,29 @@
+.loading-container {
+    .wrapper {
+        position: relative;
+    }
+
+    .overlay {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.1);
+        /*dim the background*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: black;
+        text-align: center;
+        z-index: 999;
+    }
+}

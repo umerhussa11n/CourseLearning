@@ -1,0 +1,117 @@
+$base_color: #253858;
+$gray: #cccccc;
+$bg_color: #ffffff;
+
+.sxSelectMain {
+  display: flex;
+  justify-content: space-between;
+  min-width: 15em;      
+  color: $base_color;
+  position: relative;
+
+  ul {
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+}
+
+.sxSelectWrapper {
+  width: 100%;
+  border: $gray;
+  user-select: none;
+  border-radius: 4px;
+}
+
+.sxSelectHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2em;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  cursor: default;
+  position: relative;
+  background-color: $bg_color;
+  padding: 0.35em;
+  margin-bottom: 0.21em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sxSelectPlaceholder {
+  color: darken($gray, 40%);
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.separatorWrapper {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chevron {
+  border-left: solid 1px $gray;
+  width: 2.5em;
+  fill: rgb(221, 221, 221);
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    fill: $base_color;
+  }
+}
+
+.cross {
+  composes: chevron;
+  border-left: 0;
+}
+
+.sxSelectListsWrapper{
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.sxDropdownList {
+  width: 100%;
+  min-width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  border: solid 1px $gray;
+  border-radius: 4px;
+  position: relative;
+  background-color: $bg_color;
+}
+
+.sxListItem {
+  width: 100%;
+  padding: .6em 0;
+  line-height: 1em;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &:not([class*=sxSelected]):hover {
+      background-color: #f6f6f6;
+
+  }
+
+  .sxListItemLabel {
+    padding: .72em;
+  }
+}
+
+.gt {
+  margin-right: 2%;
+  fill: $base_color;
+}

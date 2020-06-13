@@ -1,0 +1,78 @@
+.login-container {
+
+  color: #3e3e3e;
+
+  .page-title {
+    text-transform: uppercase;
+    margin: 40px 0;
+    font-size: 34px;
+  }
+
+  .form-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0 30px;
+  }
+
+  .auth-form {
+      .errors-list {
+          padding-left: 15px;
+          color: #dc3545;
+      }
+
+      .form-group {
+          &.field-object {
+              margin-bottom: 0;
+          }
+
+          &.has-error {
+              & > .form-control {
+                  border-color: #dc3545;
+              }
+
+              .error-detail {
+                  display: none;
+              }
+          }
+      }
+      .login-actions {
+          display: flex;
+          justify-content: space-between;
+      }
+  }
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+
+      .title {
+        border-bottom: 1px solid #c4c4c4;
+        line-height: 0.1em;
+        margin: 20px 0 20px;
+        font-size: smaller;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        span {
+            background: #fff;
+            padding: 0 10px;
+        }
+      }
+
+      .social-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        & > .btn {
+          flex-basis: 48%;
+        }
+      }
+
+      .submit-button {
+        width: 48%;
+        margin: 20px auto;
+      }
+
+    }
+}
